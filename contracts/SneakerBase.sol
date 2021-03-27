@@ -95,6 +95,7 @@ contract SneakerBase is AccessControl {
   /// @dev The address of the ClockAuction contract that handles sales of Sneakers. This
   ///  same contract handles both peer-to-peer sales.
   // SaleClockAuction public saleAuction;
+  // TODO: Create SaleClockAuction contract.
 
   /// @dev Assigns ownership of a specific Sneaker to an address.
   function _transfer(address _from, address _to, uint256 _tokenId) internal {
