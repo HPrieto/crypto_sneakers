@@ -262,21 +262,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newContract\",\"type\":\"address\"}],\"name\":\"ContractUpgrade\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"ceoAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"cfoAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"cooAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cooldowns\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"secondsPerBlock\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCEO\",\"type\":\"address\"}],\"name\":\"setCEO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCFO\",\"type\":\"address\"}],\"name\":\"setCFO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCOO\",\"type\":\"address\"}],\"name\":\"setCOO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"sneakerIndexToApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"sneakerIndexToOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"stockXTickerToSneaker\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Heriberto Prieto\",\"details\":\"See the SneakerCore contract documentation to understand how the various contract facets are arranged.\",\"methods\":{\"pause()\":{\"details\":\"Called by any \\\"C-Level\\\" role to pause the contract. Used only when  a bug or exploited is detected and we need to limit damage.\"},\"setCEO(address)\":{\"details\":\"Assigns a new address to act as the CEO. Only available to the current CEO.\",\"params\":{\"_newCEO\":\"The address of the new CEO.\"}},\"setCFO(address)\":{\"details\":\"Assigns a new address to act as the CFO. Only available to the current CEO.\",\"params\":{\"_newCFO\":\"The address of the new CFO.\"}},\"setCOO(address)\":{\"details\":\"Assigns a new address to act as the COO. Only available to the current CEO.\",\"params\":{\"_newCOO\":\"The address of the new COO.\"}},\"unpause()\":{\"details\":\"Unpauses the smart contract. Can only be called by the CEO, since  one reason we may pause the contract is when CFO or COO accounts are  compromised.\"}},\"title\":\"Base contract for CryptoSneakers. Holds all common structs, events and base variables.\"},\"userdoc\":{\"methods\":{\"unpause()\":{\"notice\":\"This is public rather than external so it can be called by  derived contracts.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol\":\"SneakerBase\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/AccessControl.sol\":{\"keccak256\":\"0xb89a991ac0205f22610d82b0ad177e8e44509370346587b94251d6f940483ec0\",\"urls\":[\"bzz-raw://be1a62fe329473e99e37e9de64de1d6f6b689168c410fd4f2c6566fa6e5fedf4\",\"dweb:/ipfs/QmQfP46viwiLFb3mfk9pUMgaVJ3YAAm7sjLXNygaqUxhBD\"]},\"/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol\":{\"keccak256\":\"0x19ed63bc6f5d2dd391994e939b81383a6af0acbaaeed18d3f56c67fc73f36b43\",\"urls\":[\"bzz-raw://d25a8beff7ce39a24f2feb7f88abb990e2c44f5fbf155285c2eb24fc4dc3aaa2\",\"dweb:/ipfs/QmNuWWq51gqaJHM77EYQEi8PF4udqhtSRk6XNmGgaNxrKc\"]}},\"version\":1}",
-  "bytecode": "0x60806040526000600260146101000a81548160ff021916908315150217905550604051806101c00160405280603c63ffffffff1663ffffffff168152602001607863ffffffff1663ffffffff16815260200161012c63ffffffff1663ffffffff16815260200161025863ffffffff1663ffffffff16815260200161070863ffffffff1663ffffffff168152602001610e1063ffffffff1663ffffffff168152602001611c2063ffffffff1663ffffffff16815260200161384063ffffffff1663ffffffff16815260200161708063ffffffff1663ffffffff16815260200161e10063ffffffff1663ffffffff1681526020016201518063ffffffff1663ffffffff1681526020016202a30063ffffffff1663ffffffff1681526020016205460063ffffffff1663ffffffff16815260200162093a8063ffffffff1663ffffffff16815250600390600e61015392919061016b565b50600f60055534801561016557600080fd5b50610241565b82600e6007016008900481019282156101fd5791602002820160005b838211156101cb57835183826101000a81548163ffffffff021916908363ffffffff1602179055509260200192600401602081600301049283019260010302610187565b80156101fb5782816101000a81549063ffffffff02191690556004016020816003010492830192600103026101cb565b505b50905061020a919061020e565b5090565b61023e91905b8082111561023a57600081816101000a81549063ffffffff021916905550600101610214565b5090565b90565b610ab9806102506000396000f3fe608060405234801561001057600080fd5b50600436106100ea5760003560e01c80635b8eea2c1161008c5780638456cb59116100665780638456cb59146103d65780639d6fac6f146103e0578063b047fb501461042e578063b82effce14610478576100ea565b80635b8eea2c146102c75780635c975abb146103965780637a7d4937146103b8576100ea565b80632ba73c15116100c85780632ba73c15146101c75780633f4ba83a1461020b5780634e0a33791461021557806358511bf214610259576100ea565b80630519ce79146100ef5780630a0f81681461013957806327d7874c14610183575b600080fd5b6100f76104e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61014161050c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101c56004803603602081101561019957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610531565b005b610209600480360360208110156101dd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610607565b005b6102136106de565b005b6102576004803603602081101561022b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061076d565b005b6102856004803603602081101561026f57600080fd5b8101908080359060200190929190505050610844565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610380600480360360208110156102dd57600080fd5b81019080803590602001906401000000008111156102fa57600080fd5b82018360208201111561030c57600080fd5b8035906020019184600183028401116401000000008311171561032e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610877565b6040518082815260200191505060405180910390f35b61039e6108a5565b604051808215151515815260200191505060405180910390f35b6103c06108b8565b6040518082815260200191505060405180910390f35b6103de6108be565b005b61040c600480360360208110156103f657600080fd5b81019080803590602001909291905050506109fe565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b610436610a2b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104a46004803603602081101561048e57600080fd5b8101908080359060200190929190505050610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461058a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156105c457600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461066057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561069a57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461073757600080fd5b600260149054906101000a900460ff1661075057600080fd5b6000600260146101000a81548160ff021916908315150217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146107c657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561080057600080fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60096020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600a818051602081018201805184825260208301602085012081835280955050505050506000915090505481565b600260149054906101000a900460ff1681565b60055481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614806109665750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b806109be5750600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b6109c757600080fd5b600260149054906101000a900460ff16156109e157600080fd5b6001600260146101000a81548160ff021916908315150217905550565b600381600e8110610a0b57fe5b60089182820401919006600402915054906101000a900463ffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60076020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820092eceb1b694a193e0308144bb3dce329b737f20778fde898f86ba552284dd9964736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100ea5760003560e01c80635b8eea2c1161008c5780638456cb59116100665780638456cb59146103d65780639d6fac6f146103e0578063b047fb501461042e578063b82effce14610478576100ea565b80635b8eea2c146102c75780635c975abb146103965780637a7d4937146103b8576100ea565b80632ba73c15116100c85780632ba73c15146101c75780633f4ba83a1461020b5780634e0a33791461021557806358511bf214610259576100ea565b80630519ce79146100ef5780630a0f81681461013957806327d7874c14610183575b600080fd5b6100f76104e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61014161050c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101c56004803603602081101561019957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610531565b005b610209600480360360208110156101dd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610607565b005b6102136106de565b005b6102576004803603602081101561022b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061076d565b005b6102856004803603602081101561026f57600080fd5b8101908080359060200190929190505050610844565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610380600480360360208110156102dd57600080fd5b81019080803590602001906401000000008111156102fa57600080fd5b82018360208201111561030c57600080fd5b8035906020019184600183028401116401000000008311171561032e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610877565b6040518082815260200191505060405180910390f35b61039e6108a5565b604051808215151515815260200191505060405180910390f35b6103c06108b8565b6040518082815260200191505060405180910390f35b6103de6108be565b005b61040c600480360360208110156103f657600080fd5b81019080803590602001909291905050506109fe565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b610436610a2b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104a46004803603602081101561048e57600080fd5b8101908080359060200190929190505050610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461058a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156105c457600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461066057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561069a57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461073757600080fd5b600260149054906101000a900460ff1661075057600080fd5b6000600260146101000a81548160ff021916908315150217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146107c657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561080057600080fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60096020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600a818051602081018201805184825260208301602085012081835280955050505050506000915090505481565b600260149054906101000a900460ff1681565b60055481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614806109665750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b806109be5750600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b6109c757600080fd5b600260149054906101000a900460ff16156109e157600080fd5b6001600260146101000a81548160ff021916908315150217905550565b600381600e8110610a0b57fe5b60089182820401919006600402915054906101000a900463ffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60076020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820092eceb1b694a193e0308144bb3dce329b737f20778fde898f86ba552284dd9964736f6c63430005100032",
-  "sourceMap": "304:6065:1:-;;;522:5:0;501:26;;;;;;;;;;;;;;;;;;;;2538:337:1;;;;;;;;2581:9;2538:337;;;;;;;;2604:9;2538:337;;;;;;;;2627:9;2538:337;;;;;;;;2650:10;2538:337;;;;;;;;2674:10;2538:337;;;;;;;;2698:7;2538:337;;;;;;;;2719:7;2538:337;;;;;;;;2740:7;2538:337;;;;;;;;2761:7;2538:337;;;;;;;;2782:8;2538:337;;;;;;;;2804:6;2538:337;;;;;;;;2824:6;2538:337;;;;;;;;2844:6;2538:337;;;;;;;;2864:6;2538:337;;;;;;;;;;;;;;;:::i;:::-;;2988:2;2955:35;;304:6065;8:9:-1;5:2;;;30:1;27;20:12;5:2;304:6065:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "304:6065:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;304:6065:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;351:25:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;322;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1215:118;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1215:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;1731;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1731:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;2679:114;;;:::i;:::-;;1473:118;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1473:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;3802:58:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3802:58:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3997:56;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3997:56:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;3997:56:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;3997:56:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;3997:56:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;3997:56:1;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;501:26:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;2955:35:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2328:75:0;;;:::i;:::-;;2538:337:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2538:337:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;380:25:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3308:55:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3308:55:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;351:25:0;;;;;;;;;;;;;:::o;322:::-;;;;;;;;;;;;;:::o;1215:118::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1298:1;1279:21;;:7;:21;;;;1271:30;;;;;;1321:7;1308:10;;:20;;;;;;;;;;;;;;;;;;1215:118;:::o;1731:::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1814:1;1795:21;;:7;:21;;;;1787:30;;;;;;1837:7;1824:10;;:20;;;;;;;;;;;;;;;;;;1731:118;:::o;2679:114::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;2160:6;;;;;;;;;;;2152:15;;;;;;2783:5;2774:6;;:14;;;;;;;;;;;;;;;;;;2679:114::o;1473:118::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1556:1;1537:21;;:7;:21;;;;1529:30;;;;;;1579:7;1566:10;;:20;;;;;;;;;;;;;;;;;;1473:118;:::o;3802:58:1:-;;;;;;;;;;;;;;;;;;;;;;:::o;3997:56::-;;;28:7:-1;22:14;169:4;160:7;156:18;147:7;143:32;204:13;198:20;246:8;231:13;224:31;316:4;307:7;303:18;296:4;287:7;283:18;273:49;350:9;335:13;328:32;378:4;366:16;;0:388;;;;3997:56:1;;;;;;;;:::o;501:26:0:-;;;;;;;;;;;;;:::o;2955:35:1:-;;;;:::o;2328:75:0:-;975:10;;;;;;;;;;;961:24;;:10;:24;;;:60;;;;1011:10;;;;;;;;;;;997:24;;:10;:24;;;961:60;:96;;;;1047:10;;;;;;;;;;;1033:24;;:10;:24;;;961:96;944:119;;;;;;2030:6;;;;;;;;;;;2029:7;2021:16;;;;;;2394:4;2385:6;;:13;;;;;;;;;;;;;;;;;;2328:75::o;2538:337:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;380:25:0:-;;;;;;;;;;;;;:::o;3308:55:1:-;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.22 <0.9.0;\n\nimport \"./AccessControl.sol\";\n\n/// @title Base contract for CryptoSneakers. Holds all common structs, events and base variables.\n/// @author Heriberto Prieto\n/// @dev See the SneakerCore contract documentation to understand how the various contract facets are arranged.\ncontract SneakerBase is AccessControl {\n  /*** EVENTS ***/\n\n  /// @dev Transfer event as defined in current draft of ERC721. Emitted every time a kitten\n  ///  ownership is assigned, including births.\n  event Transfer(address from, address to, uint256 tokenId);\n\n  /*** DATA TYPES ***/\n\n  // All the brands supported by CyptoSneakers.\n  enum Brand {\n    Adidas,\n    AirJordan,\n    AlexanderMcQueen,\n    ASICS,\n    Balenciaga,\n    Burberry,\n    Chanel,\n    CommonProjects,\n    Converse,\n    Crocs,\n    Diadora,\n    Dior,\n    Gucci,\n    LiNing,\n    LouisVuitton,\n    NewBalance,\n    Nike,\n    OffWhite,\n    Prada,\n    Puma,\n    Reebok,\n    SaintLaurent,\n    Saucony,\n    UnderArmor,\n    Vans,\n    Versace\n  }\n\n  /// @dev The main Sneaker struct. Every Sneaker in CryptoSneakers is represented by a copy\n  ///  of this structure, so great care was taken to ensure that it fits neatly into\n  ///  exactly two 256-bit words. Note that the order of the members in this structure\n  ///  is important because of the byte-packing rules used by Ethereum.\n  /// @note Example sneaker can be found in: https://stockx.com/air-jordan-1-retro-high-patina\n  struct Sneaker {\n    // Brand of the sneaker.\n    // Example: Nike\n    Brand brand;\n\n    // Name of the sneaker.\n    // Example: 'Jordan 1 Retro High Patina'\n    string name;\n\n    // Size of specific sneaker.\n    // Example: 10.5\n    uint64 size;\n\n    // Plant where sneaker was manufactured.\n    // Example: XC\n    // string plant;\n\n    // Date when sneaker was manufactured.\n    // Example: 01/05/2020 converted to timestamp.\n    uint64 manufactureTime;\n\n    // Style code assigned by manufacturer;\n    // Example: 555088-033\n    string style;\n\n    // Colorway of the sneaker.\n    // Example: BLACK/GREY-RUST\n    string colorWay;\n\n    // Price of sneaker set by manufacturer on release.\n    // Example: 170\n    uint32 retailPrice;\n\n    // The date when sneaker was release on retail.\n    // Example: 03/25/2021 converted to timestamp.\n    uint64 releaseTime;\n\n    // Unique code assigned to each sneaker by StockX.\n    // Example: JB-JO1RHRSBG\n    string stockXTicker;\n  }\n\n  /// @dev A lookup table indicating the cooldown duration after any successful\n  ///  action requiring cooldown.\n  uint32[14] public cooldowns = [\n    uint32(1 minutes),\n    uint32(2 minutes),\n    uint32(5 minutes),\n    uint32(10 minutes),\n    uint32(30 minutes),\n    uint32(1 hours),\n    uint32(2 hours),\n    uint32(4 hours),\n    uint32(8 hours),\n    uint32(16 hours),\n    uint32(1 days),\n    uint32(2 days),\n    uint32(4 days),\n    uint32(7 days)\n  ];\n\n  // An approximation of currently how many seconds are in between blocks.\n  uint256 public secondsPerBlock = 15;\n\n  /*** STORAGE ***/\n\n  /// @dev An array containing the Sneaker struct for all Sneakers in existence. The ID\n  ///  of each sneaker is actually an index into this array.\n  Sneaker[] sneakers;\n\n  /// @dev A mapping from sneaker IDs to the address that owns them. All sneakers have\n  ///  some valid owner address.\n  mapping (uint256 => address) public sneakerIndexToOwner;\n\n  /// @dev A mapping from owner address to count of tokens that address owns.\n  ///  Used internally inside balanceOf() to resolve ownership count.\n  mapping (address => uint256) ownershipTokenCount;\n\n  /// @dev A mapping from SneakerIDs to an address that has been approved to call\n  ///  transferFrom(). Each Sneaker can only have one approved address for transfer\n  ///  at any time. A zero value means no approval is outstanding.\n  mapping (uint256 => address) public sneakerIndexToApproved;\n\n  /// @dev A mapping from Sneaker StockX ticker to SneakerID. Each StockX ticker can only\n  ///  be assigned to a specific sneaker.\n  mapping (string => uint256) public stockXTickerToSneaker;\n\n  /// @dev The address of the ClockAuction contract that handles sales of Sneakers. This\n  ///  same contract handles both peer-to-peer sales.\n  // SaleClockAuction public saleAuction;\n  // TODO: Create SaleClockAuction contract.\n\n  /// @dev Assigns ownership of a specific Sneaker to an address.\n  function _transfer(address _from, address _to, uint256 _tokenId) internal {\n    // Since the number of sneakers is capped to 2^32 we can't overflow this\n    ownershipTokenCount[_to]++;\n    // transfer ownership.\n    sneakerIndexToOwner[_tokenId] = _to;\n    // When creating new sneakers _from is 0x0, but we can't account that address.\n    if (_from != address(0)) {\n      ownershipTokenCount[_from]--;\n      // clear any previously approved ownership exchange.\n      delete sneakerIndexToApproved[_tokenId];\n    }\n    // Emit the transfer event.\n    emit Transfer(_from, _to, _tokenId);\n  }\n\n  /// @dev An internal method that creates a new sneaker and stores it. This\n  ///  method doesn't do any checking and should only be called when the\n  ///  input data is known to be valid. Will generate a Transfer event.\n  /// @param _brand The brand name of the sneaker.\n  /// @param _name The name of the sneaker assigned by the brand.\n  /// @param _size The size of the sneaker.\n  /// @param _style The style number of the sneaker.\n  /// @param _colorWay The colorway of the sneaker\n  /// @param _retailPrice The price of the sneaker when released for retail purchasing.\n  /// @param _manufactureTime The time when the shoe was manufactured.\n  /// @param _releaseTime The date when the sneaker was first released for retail.\n  /// @param _stockXTicker The unique identifier assigned to the sneaker by StockX.\n  function _createSneaker(\n    Brand _brand,\n    string memory _name,\n    uint32 _size,\n    string memory _style,\n    string memory _colorWay,\n    uint64 _retailPrice,\n    uint64 _manufactureTime,\n    uint64 _releaseTime,\n    string memory _stockXTicker\n  )\n    internal\n    returns (uint)\n  {\n    // These requires are not strictly necessary, our calling code should make\n    // sure that these conditions are never broken. However! _createSneaker() is already\n    // an expensive call (for storage), and it doesn't hurt to be especially careful\n    // to ensure our data structures are always valid.\n\n  }\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newContract\",\"type\":\"address\"}],\"name\":\"ContractUpgrade\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"ceoAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"cfoAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"cooAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cooldowns\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"secondsPerBlock\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCEO\",\"type\":\"address\"}],\"name\":\"setCEO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCFO\",\"type\":\"address\"}],\"name\":\"setCFO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCOO\",\"type\":\"address\"}],\"name\":\"setCOO\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"sneakerIndexToApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"sneakerIndexToOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"stockXTickerToSneaker\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Heriberto Prieto\",\"details\":\"See the SneakerCore contract documentation to understand how the various contract facets are arranged.\",\"methods\":{\"pause()\":{\"details\":\"Called by any \\\"C-Level\\\" role to pause the contract. Used only when  a bug or exploited is detected and we need to limit damage.\"},\"setCEO(address)\":{\"details\":\"Assigns a new address to act as the CEO. Only available to the current CEO.\",\"params\":{\"_newCEO\":\"The address of the new CEO.\"}},\"setCFO(address)\":{\"details\":\"Assigns a new address to act as the CFO. Only available to the current CEO.\",\"params\":{\"_newCFO\":\"The address of the new CFO.\"}},\"setCOO(address)\":{\"details\":\"Assigns a new address to act as the COO. Only available to the current CEO.\",\"params\":{\"_newCOO\":\"The address of the new COO.\"}},\"unpause()\":{\"details\":\"Unpauses the smart contract. Can only be called by the CEO, since  one reason we may pause the contract is when CFO or COO accounts are  compromised.\"}},\"title\":\"Base contract for CryptoSneakers. Holds all common structs, events and base variables.\"},\"userdoc\":{\"methods\":{\"unpause()\":{\"notice\":\"This is public rather than external so it can be called by  derived contracts.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol\":\"SneakerBase\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/AccessControl.sol\":{\"keccak256\":\"0xb89a991ac0205f22610d82b0ad177e8e44509370346587b94251d6f940483ec0\",\"urls\":[\"bzz-raw://be1a62fe329473e99e37e9de64de1d6f6b689168c410fd4f2c6566fa6e5fedf4\",\"dweb:/ipfs/QmQfP46viwiLFb3mfk9pUMgaVJ3YAAm7sjLXNygaqUxhBD\"]},\"/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol\":{\"keccak256\":\"0x6fc637e82d281b9aa42a4c499348bb0090dcbebe33003526ccb12e0fd0bc8f1b\",\"urls\":[\"bzz-raw://42ad112f979c2b5c0d247f609a8f67aced5bd7205f695d496d6799ed2c82d087\",\"dweb:/ipfs/Qmbj4VThhLNm8u1yghzGChxer1drptzkzyYAMhrUrwfF53\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000600260146101000a81548160ff021916908315150217905550604051806101c00160405280603c63ffffffff1663ffffffff168152602001607863ffffffff1663ffffffff16815260200161012c63ffffffff1663ffffffff16815260200161025863ffffffff1663ffffffff16815260200161070863ffffffff1663ffffffff168152602001610e1063ffffffff1663ffffffff168152602001611c2063ffffffff1663ffffffff16815260200161384063ffffffff1663ffffffff16815260200161708063ffffffff1663ffffffff16815260200161e10063ffffffff1663ffffffff1681526020016201518063ffffffff1663ffffffff1681526020016202a30063ffffffff1663ffffffff1681526020016205460063ffffffff1663ffffffff16815260200162093a8063ffffffff1663ffffffff16815250600390600e61015392919061016b565b50600f60055534801561016557600080fd5b50610241565b82600e6007016008900481019282156101fd5791602002820160005b838211156101cb57835183826101000a81548163ffffffff021916908363ffffffff1602179055509260200192600401602081600301049283019260010302610187565b80156101fb5782816101000a81549063ffffffff02191690556004016020816003010492830192600103026101cb565b505b50905061020a919061020e565b5090565b61023e91905b8082111561023a57600081816101000a81549063ffffffff021916905550600101610214565b5090565b90565b610ab9806102506000396000f3fe608060405234801561001057600080fd5b50600436106100ea5760003560e01c80635b8eea2c1161008c5780638456cb59116100665780638456cb59146103d65780639d6fac6f146103e0578063b047fb501461042e578063b82effce14610478576100ea565b80635b8eea2c146102c75780635c975abb146103965780637a7d4937146103b8576100ea565b80632ba73c15116100c85780632ba73c15146101c75780633f4ba83a1461020b5780634e0a33791461021557806358511bf214610259576100ea565b80630519ce79146100ef5780630a0f81681461013957806327d7874c14610183575b600080fd5b6100f76104e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61014161050c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101c56004803603602081101561019957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610531565b005b610209600480360360208110156101dd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610607565b005b6102136106de565b005b6102576004803603602081101561022b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061076d565b005b6102856004803603602081101561026f57600080fd5b8101908080359060200190929190505050610844565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610380600480360360208110156102dd57600080fd5b81019080803590602001906401000000008111156102fa57600080fd5b82018360208201111561030c57600080fd5b8035906020019184600183028401116401000000008311171561032e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610877565b6040518082815260200191505060405180910390f35b61039e6108a5565b604051808215151515815260200191505060405180910390f35b6103c06108b8565b6040518082815260200191505060405180910390f35b6103de6108be565b005b61040c600480360360208110156103f657600080fd5b81019080803590602001909291905050506109fe565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b610436610a2b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104a46004803603602081101561048e57600080fd5b8101908080359060200190929190505050610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461058a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156105c457600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461066057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561069a57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461073757600080fd5b600260149054906101000a900460ff1661075057600080fd5b6000600260146101000a81548160ff021916908315150217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146107c657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561080057600080fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60096020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600a818051602081018201805184825260208301602085012081835280955050505050506000915090505481565b600260149054906101000a900460ff1681565b60055481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614806109665750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b806109be5750600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b6109c757600080fd5b600260149054906101000a900460ff16156109e157600080fd5b6001600260146101000a81548160ff021916908315150217905550565b600381600e8110610a0b57fe5b60089182820401919006600402915054906101000a900463ffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60076020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820fa010a4e818dad977f842921fea8ab481238fa59e079ce2e20b1dd6d6293c88c64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100ea5760003560e01c80635b8eea2c1161008c5780638456cb59116100665780638456cb59146103d65780639d6fac6f146103e0578063b047fb501461042e578063b82effce14610478576100ea565b80635b8eea2c146102c75780635c975abb146103965780637a7d4937146103b8576100ea565b80632ba73c15116100c85780632ba73c15146101c75780633f4ba83a1461020b5780634e0a33791461021557806358511bf214610259576100ea565b80630519ce79146100ef5780630a0f81681461013957806327d7874c14610183575b600080fd5b6100f76104e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61014161050c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101c56004803603602081101561019957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610531565b005b610209600480360360208110156101dd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610607565b005b6102136106de565b005b6102576004803603602081101561022b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061076d565b005b6102856004803603602081101561026f57600080fd5b8101908080359060200190929190505050610844565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610380600480360360208110156102dd57600080fd5b81019080803590602001906401000000008111156102fa57600080fd5b82018360208201111561030c57600080fd5b8035906020019184600183028401116401000000008311171561032e57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610877565b6040518082815260200191505060405180910390f35b61039e6108a5565b604051808215151515815260200191505060405180910390f35b6103c06108b8565b6040518082815260200191505060405180910390f35b6103de6108be565b005b61040c600480360360208110156103f657600080fd5b81019080803590602001909291905050506109fe565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b610436610a2b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6104a46004803603602081101561048e57600080fd5b8101908080359060200190929190505050610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461058a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156105c457600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461066057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561069a57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461073757600080fd5b600260149054906101000a900460ff1661075057600080fd5b6000600260146101000a81548160ff021916908315150217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146107c657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561080057600080fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60096020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600a818051602081018201805184825260208301602085012081835280955050505050506000915090505481565b600260149054906101000a900460ff1681565b60055481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614806109665750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b806109be5750600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16145b6109c757600080fd5b600260149054906101000a900460ff16156109e157600080fd5b6001600260146101000a81548160ff021916908315150217905550565b600381600e8110610a0b57fe5b60089182820401919006600402915054906101000a900463ffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60076020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820fa010a4e818dad977f842921fea8ab481238fa59e079ce2e20b1dd6d6293c88c64736f6c63430005100032",
+  "sourceMap": "304:6902:1:-;;;522:5:0;501:26;;;;;;;;;;;;;;;;;;;;2538:337:1;;;;;;;;2581:9;2538:337;;;;;;;;2604:9;2538:337;;;;;;;;2627:9;2538:337;;;;;;;;2650:10;2538:337;;;;;;;;2674:10;2538:337;;;;;;;;2698:7;2538:337;;;;;;;;2719:7;2538:337;;;;;;;;2740:7;2538:337;;;;;;;;2761:7;2538:337;;;;;;;;2782:8;2538:337;;;;;;;;2804:6;2538:337;;;;;;;;2824:6;2538:337;;;;;;;;2844:6;2538:337;;;;;;;;2864:6;2538:337;;;;;;;;;;;;;;;:::i;:::-;;2988:2;2955:35;;304:6902;8:9:-1;5:2;;;30:1;27;20:12;5:2;304:6902:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "304:6902:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;304:6902:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;351:25:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;322;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1215:118;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1215:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;1731;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1731:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;2679:114;;;:::i;:::-;;1473:118;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1473:118:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;3802:58:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3802:58:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3997:56;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3997:56:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;3997:56:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;3997:56:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;3997:56:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;3997:56:1;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;501:26:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;2955:35:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2328:75:0;;;:::i;:::-;;2538:337:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2538:337:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;380:25:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3308:55:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3308:55:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;351:25:0;;;;;;;;;;;;;:::o;322:::-;;;;;;;;;;;;;:::o;1215:118::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1298:1;1279:21;;:7;:21;;;;1271:30;;;;;;1321:7;1308:10;;:20;;;;;;;;;;;;;;;;;;1215:118;:::o;1731:::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1814:1;1795:21;;:7;:21;;;;1787:30;;;;;;1837:7;1824:10;;:20;;;;;;;;;;;;;;;;;;1731:118;:::o;2679:114::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;2160:6;;;;;;;;;;;2152:15;;;;;;2783:5;2774:6;;:14;;;;;;;;;;;;;;;;;;2679:114::o;1473:118::-;633:10;;;;;;;;;;;619:24;;:10;:24;;;611:33;;;;;;1556:1;1537:21;;:7;:21;;;;1529:30;;;;;;1579:7;1566:10;;:20;;;;;;;;;;;;;;;;;;1473:118;:::o;3802:58:1:-;;;;;;;;;;;;;;;;;;;;;;:::o;3997:56::-;;;28:7:-1;22:14;169:4;160:7;156:18;147:7;143:32;204:13;198:20;246:8;231:13;224:31;316:4;307:7;303:18;296:4;287:7;283:18;273:49;350:9;335:13;328:32;378:4;366:16;;0:388;;;;3997:56:1;;;;;;;;:::o;501:26:0:-;;;;;;;;;;;;;:::o;2955:35:1:-;;;;:::o;2328:75:0:-;975:10;;;;;;;;;;;961:24;;:10;:24;;;:60;;;;1011:10;;;;;;;;;;;997:24;;:10;:24;;;961:60;:96;;;;1047:10;;;;;;;;;;;1033:24;;:10;:24;;;961:96;944:119;;;;;;2030:6;;;;;;;;;;;2029:7;2021:16;;;;;;2394:4;2385:6;;:13;;;;;;;;;;;;;;;;;;2328:75::o;2538:337:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;380:25:0:-;;;;;;;;;;;;;:::o;3308:55:1:-;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\n\nimport \"./AccessControl.sol\";\n\n/// @title Base contract for CryptoSneakers. Holds all common structs, events and base variables.\n/// @author Heriberto Prieto\n/// @dev See the SneakerCore contract documentation to understand how the various contract facets are arranged.\ncontract SneakerBase is AccessControl {\n  /*** EVENTS ***/\n\n  /// @dev Transfer event as defined in current draft of ERC721. Emitted every time a kitten\n  ///  ownership is assigned, including births.\n  event Transfer(address from, address to, uint256 tokenId);\n\n  /*** DATA TYPES ***/\n\n  // All the brands supported by CyptoSneakers.\n  enum Brand {\n    Adidas,\n    AirJordan,\n    AlexanderMcQueen,\n    ASICS,\n    Balenciaga,\n    Burberry,\n    Chanel,\n    CommonProjects,\n    Converse,\n    Crocs,\n    Diadora,\n    Dior,\n    Gucci,\n    LiNing,\n    LouisVuitton,\n    NewBalance,\n    Nike,\n    OffWhite,\n    Prada,\n    Puma,\n    Reebok,\n    SaintLaurent,\n    Saucony,\n    UnderArmor,\n    Vans,\n    Versace\n  }\n\n  /// @dev The main Sneaker struct. Every Sneaker in CryptoSneakers is represented by a copy\n  ///  of this structure, so great care was taken to ensure that it fits neatly into\n  ///  exactly two 256-bit words. Note that the order of the members in this structure\n  ///  is important because of the byte-packing rules used by Ethereum.\n  /// @note Example sneaker can be found in: https://stockx.com/air-jordan-1-retro-high-patina\n  struct Sneaker {\n    // Brand of the sneaker.\n    // Example: Nike\n    Brand brand;\n\n    // Name of the sneaker.\n    // Example: 'Jordan 1 Retro High Patina'\n    string name;\n\n    // Size of specific sneaker.\n    // Example: 10.5\n    uint64 size;\n\n    // Plant where sneaker was manufactured.\n    // Example: XC\n    // string plant;\n\n    // Style code assigned by manufacturer;\n    // Example: 555088-033\n    string style;\n\n    // Colorway of the sneaker.\n    // Example: BLACK/GREY-RUST\n    string colorWay;\n\n    // Price of sneaker set by manufacturer on release.\n    // Example: 170\n    uint32 retailPrice;\n\n    // Date when sneaker was manufactured.\n    // Example: 01/05/2020 converted to timestamp.\n    uint64 manufactureTime;\n\n    // The date when sneaker was release on retail.\n    // Example: 03/25/2021 converted to timestamp.\n    uint64 releaseTime;\n\n    // Unique code assigned to each sneaker by StockX.\n    // Example: JB-JO1RHRSBG\n    string stockXTicker;\n  }\n\n  /// @dev A lookup table indicating the cooldown duration after any successful\n  ///  action requiring cooldown.\n  uint32[14] public cooldowns = [\n    uint32(1 minutes),\n    uint32(2 minutes),\n    uint32(5 minutes),\n    uint32(10 minutes),\n    uint32(30 minutes),\n    uint32(1 hours),\n    uint32(2 hours),\n    uint32(4 hours),\n    uint32(8 hours),\n    uint32(16 hours),\n    uint32(1 days),\n    uint32(2 days),\n    uint32(4 days),\n    uint32(7 days)\n  ];\n\n  // An approximation of currently how many seconds are in between blocks.\n  uint256 public secondsPerBlock = 15;\n\n  /*** STORAGE ***/\n\n  /// @dev An array containing the Sneaker struct for all Sneakers in existence. The ID\n  ///  of each sneaker is actually an index into this array.\n  Sneaker[] sneakers;\n\n  /// @dev A mapping from sneaker IDs to the address that owns them. All sneakers have\n  ///  some valid owner address.\n  mapping (uint256 => address) public sneakerIndexToOwner;\n\n  /// @dev A mapping from owner address to count of tokens that address owns.\n  ///  Used internally inside balanceOf() to resolve ownership count.\n  mapping (address => uint256) ownershipTokenCount;\n\n  /// @dev A mapping from SneakerIDs to an address that has been approved to call\n  ///  transferFrom(). Each Sneaker can only have one approved address for transfer\n  ///  at any time. A zero value means no approval is outstanding.\n  mapping (uint256 => address) public sneakerIndexToApproved;\n\n  /// @dev A mapping from Sneaker StockX ticker to SneakerID. Each StockX ticker can only\n  ///  be assigned to a specific sneaker.\n  mapping (string => uint256) public stockXTickerToSneaker;\n\n  /// @dev The address of the ClockAuction contract that handles sales of Sneakers. This\n  ///  same contract handles both peer-to-peer sales.\n  // SaleClockAuction public saleAuction;\n  // TODO: Create SaleClockAuction contract.\n\n  /// @dev Assigns ownership of a specific Sneaker to an address.\n  function _transfer(address _from, address _to, uint256 _tokenId) internal {\n    // Since the number of sneakers is capped to 2^32 we can't overflow this\n    ownershipTokenCount[_to]++;\n    // transfer ownership.\n    sneakerIndexToOwner[_tokenId] = _to;\n    // When creating new sneakers _from is 0x0, but we can't account that address.\n    if (_from != address(0)) {\n      ownershipTokenCount[_from]--;\n      // clear any previously approved ownership exchange.\n      delete sneakerIndexToApproved[_tokenId];\n    }\n    // Emit the transfer event.\n    emit Transfer(_from, _to, _tokenId);\n  }\n\n  /// @dev An internal method that creates a new sneaker and stores it. This\n  ///  method doesn't do any checking and should only be called when the\n  ///  input data is known to be valid. Will generate a Transfer event.\n  /// @param _brand The brand name of the sneaker.\n  /// @param _name The name of the sneaker assigned by the brand.\n  /// @param _size The size of the sneaker.\n  /// @param _style The style number of the sneaker.\n  /// @param _colorWay The colorway of the sneaker\n  /// @param _retailPrice The price of the sneaker when released for retail purchasing.\n  /// @param _manufactureTime The time when the shoe was manufactured.\n  /// @param _releaseTime The date when the sneaker was first released for retail.\n  /// @param _stockXTicker The unique identifier assigned to the sneaker by StockX.\n  /// @param _owner The owner of the newly created sneaker.\n  function _createSneaker(\n    Brand _brand,\n    string memory _name,\n    uint32 _size,\n    string memory _style,\n    string memory _colorWay,\n    uint32 _retailPrice,\n    uint64 _manufactureTime,\n    uint64 _releaseTime,\n    string memory _stockXTicker,\n    address _owner\n  )\n    internal\n    returns (uint)\n  {\n    // These requires are not strictly necessary, our calling code should make\n    // sure that these conditions are never broken. However! _createSneaker() is already\n    // an expensive call (for storage), and it doesn't hurt to be especially careful\n    // to ensure our data structures are always valid.\n    require(_size == uint256(uint32(_size)));\n    require(_retailPrice == uint256(uint64(_retailPrice)));\n\n    Sneaker memory _sneaker = Sneaker({\n      brand: _brand,\n      name: _name,\n      size: _size,\n      style: _style,\n      colorWay: _colorWay,\n      retailPrice: _retailPrice,\n      manufactureTime: _manufactureTime,\n      releaseTime: _releaseTime,\n      stockXTicker: _stockXTicker\n    });\n\n    uint256 newSneakerId = sneakers.push(_sneaker) - 1;\n\n    // It's probably never going to happen, 4 billion sneakers is A LOT, but\n    // let's just be 100% sure we never let this happen.\n    require(newSneakerId == uint256(uint32(newSneakerId)));\n\n    // Emit Transfer Event\n    _transfer(address(0), _owner, newSneakerId);\n\n    return newSneakerId;\n  }\n}\n",
   "sourcePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol",
   "ast": {
     "absolutePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol",
     "exportedSymbols": {
       "SneakerBase": [
-        367
+        432
       ]
     },
-    "id": 368,
+    "id": 433,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -298,7 +298,7 @@
         "file": "./AccessControl.sol",
         "id": 173,
         "nodeType": "ImportDirective",
-        "scope": 368,
+        "scope": 433,
         "sourceUnit": 171,
         "src": "34:29:1",
         "symbolAliases": [],
@@ -331,9 +331,9 @@
         "contractKind": "contract",
         "documentation": "@title Base contract for CryptoSneakers. Holds all common structs, events and base variables.\n @author Heriberto Prieto\n @dev See the SneakerCore contract documentation to understand how the various contract facets are arranged.",
         "fullyImplemented": true,
-        "id": 367,
+        "id": 432,
         "linearizedBaseContracts": [
-          367,
+          432,
           170
         ],
         "name": "SneakerBase",
@@ -689,24 +689,24 @@
               {
                 "constant": false,
                 "id": 218,
-                "name": "manufactureTime",
+                "name": "style",
                 "nodeType": "VariableDeclaration",
                 "scope": 229,
-                "src": "1878:22:1",
+                "src": "1855:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_uint64",
-                  "typeString": "uint64"
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
                 },
                 "typeName": {
                   "id": 217,
-                  "name": "uint64",
+                  "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1878:6:1",
+                  "src": "1855:6:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint64",
-                    "typeString": "uint64"
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
                   }
                 },
                 "value": null,
@@ -715,10 +715,10 @@
               {
                 "constant": false,
                 "id": 220,
-                "name": "style",
+                "name": "colorWay",
                 "nodeType": "VariableDeclaration",
                 "scope": 229,
-                "src": "1978:12:1",
+                "src": "1938:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -729,7 +729,7 @@
                   "id": 219,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1978:6:1",
+                  "src": "1938:6:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -741,24 +741,24 @@
               {
                 "constant": false,
                 "id": 222,
-                "name": "colorWay",
+                "name": "retailPrice",
                 "nodeType": "VariableDeclaration",
                 "scope": 229,
-                "src": "2061:15:1",
+                "src": "2036:18:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_string_storage_ptr",
-                  "typeString": "string"
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
                 },
                 "typeName": {
                   "id": 221,
-                  "name": "string",
+                  "name": "uint32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "2061:6:1",
+                  "src": "2036:6:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_string_storage_ptr",
-                    "typeString": "string"
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
                   }
                 },
                 "value": null,
@@ -767,24 +767,24 @@
               {
                 "constant": false,
                 "id": 224,
-                "name": "retailPrice",
+                "name": "manufactureTime",
                 "nodeType": "VariableDeclaration",
                 "scope": 229,
-                "src": "2159:18:1",
+                "src": "2155:22:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_uint32",
-                  "typeString": "uint32"
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
                 },
                 "typeName": {
                   "id": 223,
-                  "name": "uint32",
+                  "name": "uint64",
                   "nodeType": "ElementaryTypeName",
-                  "src": "2159:6:1",
+                  "src": "2155:6:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint32",
-                    "typeString": "uint32"
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
                   }
                 },
                 "value": null,
@@ -845,7 +845,7 @@
             ],
             "name": "Sneaker",
             "nodeType": "StructDefinition",
-            "scope": 367,
+            "scope": 432,
             "src": "1446:974:1",
             "visibility": "public"
           },
@@ -854,7 +854,7 @@
             "id": 276,
             "name": "cooldowns",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "2538:337:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1707,7 +1707,7 @@
             "id": 279,
             "name": "secondsPerBlock",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "2955:35:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1750,7 +1750,7 @@
             "id": 282,
             "name": "sneakers",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "3165:18:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1788,7 +1788,7 @@
             "id": 286,
             "name": "sneakerIndexToOwner",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "3308:55:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1834,7 +1834,7 @@
             "id": 290,
             "name": "ownershipTokenCount",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "3516:48:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1879,7 +1879,7 @@
             "id": 294,
             "name": "sneakerIndexToApproved",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "3802:58:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1925,7 +1925,7 @@
             "id": 298,
             "name": "stockXTickerToSneaker",
             "nodeType": "VariableDeclaration",
-            "scope": 367,
+            "scope": 432,
             "src": "3997:56:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2518,7 +2518,7 @@
               "parameters": [],
               "src": "4429:0:1"
             },
-            "scope": 367,
+            "scope": 432,
             "src": "4355:591:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2526,20 +2526,1037 @@
           },
           {
             "body": {
-              "id": 365,
+              "id": 430,
               "nodeType": "Block",
-              "src": "6053:314:1",
-              "statements": []
+              "src": "6133:1071:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 374,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 368,
+                          "name": "_size",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 348,
+                          "src": "6455:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 371,
+                                  "name": "_size",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 348,
+                                  "src": "6479:5:1",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                ],
+                                "id": 370,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "6472:6:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint32_$",
+                                  "typeString": "type(uint32)"
+                                },
+                                "typeName": "uint32"
+                              },
+                              "id": 372,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "6472:13:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            ],
+                            "id": 369,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "6464:7:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint256_$",
+                              "typeString": "type(uint256)"
+                            },
+                            "typeName": "uint256"
+                          },
+                          "id": 373,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "6464:22:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "6455:31:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 367,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        450,
+                        451
+                      ],
+                      "referencedDeclaration": 450,
+                      "src": "6447:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 375,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6447:40:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 376,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6447:40:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 384,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 378,
+                          "name": "_retailPrice",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 354,
+                          "src": "6501:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 381,
+                                  "name": "_retailPrice",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 354,
+                                  "src": "6532:12:1",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                ],
+                                "id": 380,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "6525:6:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint64_$",
+                                  "typeString": "type(uint64)"
+                                },
+                                "typeName": "uint64"
+                              },
+                              "id": 382,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "6525:20:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                              }
+                            ],
+                            "id": 379,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "6517:7:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint256_$",
+                              "typeString": "type(uint256)"
+                            },
+                            "typeName": "uint256"
+                          },
+                          "id": 383,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "6517:29:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "6501:45:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 377,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        450,
+                        451
+                      ],
+                      "referencedDeclaration": 450,
+                      "src": "6493:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 385,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6493:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 386,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6493:54:1"
+                },
+                {
+                  "assignments": [
+                    388
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 388,
+                      "name": "_sneaker",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 430,
+                      "src": "6554:23:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Sneaker_$229_memory_ptr",
+                        "typeString": "struct SneakerBase.Sneaker"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 387,
+                        "name": "Sneaker",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 229,
+                        "src": "6554:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Sneaker_$229_storage_ptr",
+                          "typeString": "struct SneakerBase.Sneaker"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 400,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 390,
+                        "name": "_brand",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 344,
+                        "src": "6603:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Brand_$210",
+                          "typeString": "enum SneakerBase.Brand"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 391,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 346,
+                        "src": "6623:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 392,
+                        "name": "_size",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 348,
+                        "src": "6642:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 393,
+                        "name": "_style",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 350,
+                        "src": "6662:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 394,
+                        "name": "_colorWay",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 352,
+                        "src": "6686:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 395,
+                        "name": "_retailPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 354,
+                        "src": "6716:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 396,
+                        "name": "_manufactureTime",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 356,
+                        "src": "6753:16:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 397,
+                        "name": "_releaseTime",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 358,
+                        "src": "6790:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 398,
+                        "name": "_stockXTicker",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 360,
+                        "src": "6824:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_Brand_$210",
+                          "typeString": "enum SneakerBase.Brand"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        },
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 389,
+                      "name": "Sneaker",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 229,
+                      "src": "6580:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Sneaker_$229_storage_ptr_$",
+                        "typeString": "type(struct SneakerBase.Sneaker storage pointer)"
+                      }
+                    },
+                    "id": 399,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [
+                      "brand",
+                      "name",
+                      "size",
+                      "style",
+                      "colorWay",
+                      "retailPrice",
+                      "manufactureTime",
+                      "releaseTime",
+                      "stockXTicker"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "6580:264:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Sneaker_$229_memory",
+                      "typeString": "struct SneakerBase.Sneaker memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "6554:290:1"
+                },
+                {
+                  "assignments": [
+                    402
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 402,
+                      "name": "newSneakerId",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 430,
+                      "src": "6851:20:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 401,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "6851:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 409,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 405,
+                          "name": "_sneaker",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 388,
+                          "src": "6888:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Sneaker_$229_memory_ptr",
+                            "typeString": "struct SneakerBase.Sneaker memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_struct$_Sneaker_$229_memory_ptr",
+                            "typeString": "struct SneakerBase.Sneaker memory"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 403,
+                          "name": "sneakers",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 282,
+                          "src": "6874:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Sneaker_$229_storage_$dyn_storage",
+                            "typeString": "struct SneakerBase.Sneaker storage ref[] storage ref"
+                          }
+                        },
+                        "id": 404,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "push",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "6874:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Sneaker_$229_storage_$returns$_t_uint256_$",
+                          "typeString": "function (struct SneakerBase.Sneaker storage ref) returns (uint256)"
+                        }
+                      },
+                      "id": 406,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "6874:23:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 407,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "6900:1:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "6874:27:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "6851:50:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 417,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 411,
+                          "name": "newSneakerId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 402,
+                          "src": "7050:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 414,
+                                  "name": "newSneakerId",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 402,
+                                  "src": "7081:12:1",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                ],
+                                "id": 413,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "7074:6:1",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint32_$",
+                                  "typeString": "type(uint32)"
+                                },
+                                "typeName": "uint32"
+                              },
+                              "id": 415,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "7074:20:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            ],
+                            "id": 412,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "7066:7:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint256_$",
+                              "typeString": "type(uint256)"
+                            },
+                            "typeName": "uint256"
+                          },
+                          "id": 416,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "7066:29:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "7050:45:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 410,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        450,
+                        451
+                      ],
+                      "referencedDeclaration": 450,
+                      "src": "7042:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 418,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "7042:54:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 419,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7042:54:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 422,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "7148:1:1",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            }
+                          ],
+                          "id": 421,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "7140:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 423,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "7140:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 424,
+                        "name": "_owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 362,
+                        "src": "7152:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 425,
+                        "name": "newSneakerId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 402,
+                        "src": "7160:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 420,
+                      "name": "_transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 342,
+                      "src": "7130:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 426,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "7130:43:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 427,
+                  "nodeType": "ExpressionStatement",
+                  "src": "7130:43:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 428,
+                    "name": "newSneakerId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 402,
+                    "src": "7187:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 366,
+                  "id": 429,
+                  "nodeType": "Return",
+                  "src": "7180:19:1"
+                }
+              ]
             },
-            "documentation": "@dev An internal method that creates a new sneaker and stores it. This\n  method doesn't do any checking and should only be called when the\n  input data is known to be valid. Will generate a Transfer event.\n @param _brand The brand name of the sneaker.\n @param _name The name of the sneaker assigned by the brand.\n @param _size The size of the sneaker.\n @param _style The style number of the sneaker.\n @param _colorWay The colorway of the sneaker\n @param _retailPrice The price of the sneaker when released for retail purchasing.\n @param _manufactureTime The time when the shoe was manufactured.\n @param _releaseTime The date when the sneaker was first released for retail.\n @param _stockXTicker The unique identifier assigned to the sneaker by StockX.",
-            "id": 366,
+            "documentation": "@dev An internal method that creates a new sneaker and stores it. This\n  method doesn't do any checking and should only be called when the\n  input data is known to be valid. Will generate a Transfer event.\n @param _brand The brand name of the sneaker.\n @param _name The name of the sneaker assigned by the brand.\n @param _size The size of the sneaker.\n @param _style The style number of the sneaker.\n @param _colorWay The colorway of the sneaker\n @param _retailPrice The price of the sneaker when released for retail purchasing.\n @param _manufactureTime The time when the shoe was manufactured.\n @param _releaseTime The date when the sneaker was first released for retail.\n @param _stockXTicker The unique identifier assigned to the sneaker by StockX.\n @param _owner The owner of the newly created sneaker.",
+            "id": 431,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_createSneaker",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 361,
+              "id": 363,
               "nodeType": "ParameterList",
               "parameters": [
                 {
@@ -2547,8 +3564,8 @@
                   "id": 344,
                   "name": "_brand",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5792:12:1",
+                  "scope": 431,
+                  "src": "5852:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2561,7 +3578,7 @@
                     "name": "Brand",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 210,
-                    "src": "5792:5:1",
+                    "src": "5852:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Brand_$210",
                       "typeString": "enum SneakerBase.Brand"
@@ -2575,8 +3592,8 @@
                   "id": 346,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5810:19:1",
+                  "scope": 431,
+                  "src": "5870:19:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2587,7 +3604,7 @@
                     "id": 345,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5810:6:1",
+                    "src": "5870:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2601,8 +3618,8 @@
                   "id": 348,
                   "name": "_size",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5835:12:1",
+                  "scope": 431,
+                  "src": "5895:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2613,7 +3630,7 @@
                     "id": 347,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5835:6:1",
+                    "src": "5895:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint32",
                       "typeString": "uint32"
@@ -2627,8 +3644,8 @@
                   "id": 350,
                   "name": "_style",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5853:20:1",
+                  "scope": 431,
+                  "src": "5913:20:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2639,7 +3656,7 @@
                     "id": 349,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5853:6:1",
+                    "src": "5913:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2653,8 +3670,8 @@
                   "id": 352,
                   "name": "_colorWay",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5879:23:1",
+                  "scope": 431,
+                  "src": "5939:23:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2665,7 +3682,7 @@
                     "id": 351,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5879:6:1",
+                    "src": "5939:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2679,22 +3696,22 @@
                   "id": 354,
                   "name": "_retailPrice",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5908:19:1",
+                  "scope": 431,
+                  "src": "5968:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint64",
-                    "typeString": "uint64"
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
                   },
                   "typeName": {
                     "id": 353,
-                    "name": "uint64",
+                    "name": "uint32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5908:6:1",
+                    "src": "5968:6:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint64",
-                      "typeString": "uint64"
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
                     }
                   },
                   "value": null,
@@ -2705,8 +3722,8 @@
                   "id": 356,
                   "name": "_manufactureTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5933:23:1",
+                  "scope": 431,
+                  "src": "5993:23:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2717,7 +3734,7 @@
                     "id": 355,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5933:6:1",
+                    "src": "5993:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint64",
                       "typeString": "uint64"
@@ -2731,8 +3748,8 @@
                   "id": 358,
                   "name": "_releaseTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5962:19:1",
+                  "scope": 431,
+                  "src": "6022:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2743,7 +3760,7 @@
                     "id": 357,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5962:6:1",
+                    "src": "6022:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint64",
                       "typeString": "uint64"
@@ -2757,8 +3774,8 @@
                   "id": 360,
                   "name": "_stockXTicker",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "5987:27:1",
+                  "scope": 431,
+                  "src": "6047:27:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2769,7 +3786,7 @@
                     "id": 359,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5987:6:1",
+                    "src": "6047:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2777,21 +3794,48 @@
                   },
                   "value": null,
                   "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 362,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 431,
+                  "src": "6080:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 361,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6080:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
                 }
               ],
-              "src": "5786:232:1"
+              "src": "5846:252:1"
             },
             "returnParameters": {
-              "id": 364,
+              "id": 366,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 363,
+                  "id": 365,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 366,
-                  "src": "6045:4:1",
+                  "scope": 431,
+                  "src": "6125:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2799,10 +3843,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 362,
+                    "id": 364,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6045:4:1",
+                    "src": "6125:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2812,27 +3856,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6044:6:1"
+              "src": "6124:6:1"
             },
-            "scope": 367,
-            "src": "5763:604:1",
+            "scope": 432,
+            "src": "5823:1381:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 368,
-        "src": "304:6065:1"
+        "scope": 433,
+        "src": "304:6902:1"
       }
     ],
-    "src": "0:6370:1"
+    "src": "0:7207:1"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/SneakerBase.sol",
       "exportedSymbols": {
         "SneakerBase": [
-          367
+          432
         ]
       }
     },
@@ -2858,7 +3902,7 @@
           "SourceUnit": 171,
           "absolutePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/AccessControl.sol",
           "file": "./AccessControl.sol",
-          "scope": 368,
+          "scope": 433,
           "symbolAliases": [
             null
           ],
@@ -2877,11 +3921,11 @@
           "documentation": "@title Base contract for CryptoSneakers. Holds all common structs, events and base variables.\n @author Heriberto Prieto\n @dev See the SneakerCore contract documentation to understand how the various contract facets are arranged.",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            367,
+            432,
             170
           ],
           "name": "SneakerBase",
-          "scope": 368
+          "scope": 433
         },
         "children": [
           {
@@ -3230,7 +4274,7 @@
             "attributes": {
               "canonicalName": "SneakerBase.Sneaker",
               "name": "Sneaker",
-              "scope": 367,
+              "scope": 432,
               "visibility": "public"
             },
             "children": [
@@ -3317,32 +4361,6 @@
               {
                 "attributes": {
                   "constant": false,
-                  "name": "manufactureTime",
-                  "scope": 229,
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "type": "uint64",
-                  "value": null,
-                  "visibility": "internal"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "name": "uint64",
-                      "type": "uint64"
-                    },
-                    "id": 217,
-                    "name": "ElementaryTypeName",
-                    "src": "1878:6:1"
-                  }
-                ],
-                "id": 218,
-                "name": "VariableDeclaration",
-                "src": "1878:22:1"
-              },
-              {
-                "attributes": {
-                  "constant": false,
                   "name": "style",
                   "scope": 229,
                   "stateVariable": false,
@@ -3357,14 +4375,14 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 219,
+                    "id": 217,
                     "name": "ElementaryTypeName",
-                    "src": "1978:6:1"
+                    "src": "1855:6:1"
                   }
                 ],
-                "id": 220,
+                "id": 218,
                 "name": "VariableDeclaration",
-                "src": "1978:12:1"
+                "src": "1855:12:1"
               },
               {
                 "attributes": {
@@ -3383,14 +4401,14 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 221,
+                    "id": 219,
                     "name": "ElementaryTypeName",
-                    "src": "2061:6:1"
+                    "src": "1938:6:1"
                   }
                 ],
-                "id": 222,
+                "id": 220,
                 "name": "VariableDeclaration",
-                "src": "2061:15:1"
+                "src": "1938:15:1"
               },
               {
                 "attributes": {
@@ -3409,14 +4427,40 @@
                       "name": "uint32",
                       "type": "uint32"
                     },
+                    "id": 221,
+                    "name": "ElementaryTypeName",
+                    "src": "2036:6:1"
+                  }
+                ],
+                "id": 222,
+                "name": "VariableDeclaration",
+                "src": "2036:18:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "manufactureTime",
+                  "scope": 229,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint64",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint64",
+                      "type": "uint64"
+                    },
                     "id": 223,
                     "name": "ElementaryTypeName",
-                    "src": "2159:6:1"
+                    "src": "2155:6:1"
                   }
                 ],
                 "id": 224,
                 "name": "VariableDeclaration",
-                "src": "2159:18:1"
+                "src": "2155:22:1"
               },
               {
                 "attributes": {
@@ -3479,7 +4523,7 @@
             "attributes": {
               "constant": false,
               "name": "cooldowns",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint32[14]",
@@ -4331,7 +5375,7 @@
             "attributes": {
               "constant": false,
               "name": "secondsPerBlock",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -4373,7 +5417,7 @@
             "attributes": {
               "constant": false,
               "name": "sneakers",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "struct SneakerBase.Sneaker[]",
@@ -4412,7 +5456,7 @@
             "attributes": {
               "constant": false,
               "name": "sneakerIndexToOwner",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => address)",
@@ -4458,7 +5502,7 @@
             "attributes": {
               "constant": false,
               "name": "ownershipTokenCount",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -4503,7 +5547,7 @@
             "attributes": {
               "constant": false,
               "name": "sneakerIndexToApproved",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => address)",
@@ -4549,7 +5593,7 @@
             "attributes": {
               "constant": false,
               "name": "stockXTickerToSneaker",
-              "scope": 367,
+              "scope": 432,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(string => uint256)",
@@ -4600,7 +5644,7 @@
                 null
               ],
               "name": "_transfer",
-              "scope": 367,
+              "scope": 432,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "internal"
@@ -5202,7 +6246,7 @@
           },
           {
             "attributes": {
-              "documentation": "@dev An internal method that creates a new sneaker and stores it. This\n  method doesn't do any checking and should only be called when the\n  input data is known to be valid. Will generate a Transfer event.\n @param _brand The brand name of the sneaker.\n @param _name The name of the sneaker assigned by the brand.\n @param _size The size of the sneaker.\n @param _style The style number of the sneaker.\n @param _colorWay The colorway of the sneaker\n @param _retailPrice The price of the sneaker when released for retail purchasing.\n @param _manufactureTime The time when the shoe was manufactured.\n @param _releaseTime The date when the sneaker was first released for retail.\n @param _stockXTicker The unique identifier assigned to the sneaker by StockX.",
+              "documentation": "@dev An internal method that creates a new sneaker and stores it. This\n  method doesn't do any checking and should only be called when the\n  input data is known to be valid. Will generate a Transfer event.\n @param _brand The brand name of the sneaker.\n @param _name The name of the sneaker assigned by the brand.\n @param _size The size of the sneaker.\n @param _style The style number of the sneaker.\n @param _colorWay The colorway of the sneaker\n @param _retailPrice The price of the sneaker when released for retail purchasing.\n @param _manufactureTime The time when the shoe was manufactured.\n @param _releaseTime The date when the sneaker was first released for retail.\n @param _stockXTicker The unique identifier assigned to the sneaker by StockX.\n @param _owner The owner of the newly created sneaker.",
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
@@ -5210,7 +6254,7 @@
                 null
               ],
               "name": "_createSneaker",
-              "scope": 367,
+              "scope": 432,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "internal"
@@ -5222,7 +6266,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_brand",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum SneakerBase.Brand",
@@ -5239,18 +6283,18 @@
                         },
                         "id": 343,
                         "name": "UserDefinedTypeName",
-                        "src": "5792:5:1"
+                        "src": "5852:5:1"
                       }
                     ],
                     "id": 344,
                     "name": "VariableDeclaration",
-                    "src": "5792:12:1"
+                    "src": "5852:12:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_name",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5265,18 +6309,18 @@
                         },
                         "id": 345,
                         "name": "ElementaryTypeName",
-                        "src": "5810:6:1"
+                        "src": "5870:6:1"
                       }
                     ],
                     "id": 346,
                     "name": "VariableDeclaration",
-                    "src": "5810:19:1"
+                    "src": "5870:19:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_size",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint32",
@@ -5291,18 +6335,18 @@
                         },
                         "id": 347,
                         "name": "ElementaryTypeName",
-                        "src": "5835:6:1"
+                        "src": "5895:6:1"
                       }
                     ],
                     "id": 348,
                     "name": "VariableDeclaration",
-                    "src": "5835:12:1"
+                    "src": "5895:12:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_style",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5317,18 +6361,18 @@
                         },
                         "id": 349,
                         "name": "ElementaryTypeName",
-                        "src": "5853:6:1"
+                        "src": "5913:6:1"
                       }
                     ],
                     "id": 350,
                     "name": "VariableDeclaration",
-                    "src": "5853:20:1"
+                    "src": "5913:20:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_colorWay",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5343,44 +6387,44 @@
                         },
                         "id": 351,
                         "name": "ElementaryTypeName",
-                        "src": "5879:6:1"
+                        "src": "5939:6:1"
                       }
                     ],
                     "id": 352,
                     "name": "VariableDeclaration",
-                    "src": "5879:23:1"
+                    "src": "5939:23:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_retailPrice",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "uint64",
+                      "type": "uint32",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "uint64",
-                          "type": "uint64"
+                          "name": "uint32",
+                          "type": "uint32"
                         },
                         "id": 353,
                         "name": "ElementaryTypeName",
-                        "src": "5908:6:1"
+                        "src": "5968:6:1"
                       }
                     ],
                     "id": 354,
                     "name": "VariableDeclaration",
-                    "src": "5908:19:1"
+                    "src": "5968:19:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_manufactureTime",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint64",
@@ -5395,18 +6439,18 @@
                         },
                         "id": 355,
                         "name": "ElementaryTypeName",
-                        "src": "5933:6:1"
+                        "src": "5993:6:1"
                       }
                     ],
                     "id": 356,
                     "name": "VariableDeclaration",
-                    "src": "5933:23:1"
+                    "src": "5993:23:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_releaseTime",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint64",
@@ -5421,18 +6465,18 @@
                         },
                         "id": 357,
                         "name": "ElementaryTypeName",
-                        "src": "5962:6:1"
+                        "src": "6022:6:1"
                       }
                     ],
                     "id": 358,
                     "name": "VariableDeclaration",
-                    "src": "5962:19:1"
+                    "src": "6022:19:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_stockXTicker",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5447,17 +6491,44 @@
                         },
                         "id": 359,
                         "name": "ElementaryTypeName",
-                        "src": "5987:6:1"
+                        "src": "6047:6:1"
                       }
                     ],
                     "id": 360,
                     "name": "VariableDeclaration",
-                    "src": "5987:27:1"
+                    "src": "6047:27:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_owner",
+                      "scope": 431,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 361,
+                        "name": "ElementaryTypeName",
+                        "src": "6080:7:1"
+                      }
+                    ],
+                    "id": 362,
+                    "name": "VariableDeclaration",
+                    "src": "6080:14:1"
                   }
                 ],
-                "id": 361,
+                "id": 363,
                 "name": "ParameterList",
-                "src": "5786:232:1"
+                "src": "5846:252:1"
               },
               {
                 "children": [
@@ -5465,7 +6536,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 366,
+                      "scope": 431,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -5478,45 +6549,1112 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 362,
+                        "id": 364,
                         "name": "ElementaryTypeName",
-                        "src": "6045:4:1"
+                        "src": "6125:4:1"
                       }
                     ],
-                    "id": 363,
+                    "id": 365,
                     "name": "VariableDeclaration",
-                    "src": "6045:4:1"
+                    "src": "6125:4:1"
                   }
                 ],
-                "id": 364,
+                "id": 366,
                 "name": "ParameterList",
-                "src": "6044:6:1"
+                "src": "6124:6:1"
               },
               {
-                "attributes": {
-                  "statements": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 365,
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                450,
+                                451
+                              ],
+                              "referencedDeclaration": 450,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 367,
+                            "name": "Identifier",
+                            "src": "6447:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 348,
+                                  "type": "uint32",
+                                  "value": "_size"
+                                },
+                                "id": 368,
+                                "name": "Identifier",
+                                "src": "6455:5:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "uint256",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint32",
+                                          "typeString": "uint32"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(uint256)",
+                                      "value": "uint256"
+                                    },
+                                    "id": 369,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "6464:7:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "uint32",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_uint32",
+                                              "typeString": "uint32"
+                                            }
+                                          ],
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "type": "type(uint32)",
+                                          "value": "uint32"
+                                        },
+                                        "id": 370,
+                                        "name": "ElementaryTypeNameExpression",
+                                        "src": "6472:6:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 348,
+                                          "type": "uint32",
+                                          "value": "_size"
+                                        },
+                                        "id": 371,
+                                        "name": "Identifier",
+                                        "src": "6479:5:1"
+                                      }
+                                    ],
+                                    "id": 372,
+                                    "name": "FunctionCall",
+                                    "src": "6472:13:1"
+                                  }
+                                ],
+                                "id": 373,
+                                "name": "FunctionCall",
+                                "src": "6464:22:1"
+                              }
+                            ],
+                            "id": 374,
+                            "name": "BinaryOperation",
+                            "src": "6455:31:1"
+                          }
+                        ],
+                        "id": 375,
+                        "name": "FunctionCall",
+                        "src": "6447:40:1"
+                      }
+                    ],
+                    "id": 376,
+                    "name": "ExpressionStatement",
+                    "src": "6447:40:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                450,
+                                451
+                              ],
+                              "referencedDeclaration": 450,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 377,
+                            "name": "Identifier",
+                            "src": "6493:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 354,
+                                  "type": "uint32",
+                                  "value": "_retailPrice"
+                                },
+                                "id": 378,
+                                "name": "Identifier",
+                                "src": "6501:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "uint256",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint64",
+                                          "typeString": "uint64"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(uint256)",
+                                      "value": "uint256"
+                                    },
+                                    "id": 379,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "6517:7:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "uint64",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_uint32",
+                                              "typeString": "uint32"
+                                            }
+                                          ],
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "type": "type(uint64)",
+                                          "value": "uint64"
+                                        },
+                                        "id": 380,
+                                        "name": "ElementaryTypeNameExpression",
+                                        "src": "6525:6:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 354,
+                                          "type": "uint32",
+                                          "value": "_retailPrice"
+                                        },
+                                        "id": 381,
+                                        "name": "Identifier",
+                                        "src": "6532:12:1"
+                                      }
+                                    ],
+                                    "id": 382,
+                                    "name": "FunctionCall",
+                                    "src": "6525:20:1"
+                                  }
+                                ],
+                                "id": 383,
+                                "name": "FunctionCall",
+                                "src": "6517:29:1"
+                              }
+                            ],
+                            "id": 384,
+                            "name": "BinaryOperation",
+                            "src": "6501:45:1"
+                          }
+                        ],
+                        "id": 385,
+                        "name": "FunctionCall",
+                        "src": "6493:54:1"
+                      }
+                    ],
+                    "id": 386,
+                    "name": "ExpressionStatement",
+                    "src": "6493:54:1"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        388
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "_sneaker",
+                          "scope": 430,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct SneakerBase.Sneaker",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "Sneaker",
+                              "referencedDeclaration": 229,
+                              "type": "struct SneakerBase.Sneaker"
+                            },
+                            "id": 387,
+                            "name": "UserDefinedTypeName",
+                            "src": "6554:7:1"
+                          }
+                        ],
+                        "id": 388,
+                        "name": "VariableDeclaration",
+                        "src": "6554:23:1"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            "brand",
+                            "name",
+                            "size",
+                            "style",
+                            "colorWay",
+                            "retailPrice",
+                            "manufactureTime",
+                            "releaseTime",
+                            "stockXTicker"
+                          ],
+                          "type": "struct SneakerBase.Sneaker memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_enum$_Brand_$210",
+                                  "typeString": "enum SneakerBase.Brand"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint64",
+                                  "typeString": "uint64"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint64",
+                                  "typeString": "uint64"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 229,
+                              "type": "type(struct SneakerBase.Sneaker storage pointer)",
+                              "value": "Sneaker"
+                            },
+                            "id": 389,
+                            "name": "Identifier",
+                            "src": "6580:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 344,
+                              "type": "enum SneakerBase.Brand",
+                              "value": "_brand"
+                            },
+                            "id": 390,
+                            "name": "Identifier",
+                            "src": "6603:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 346,
+                              "type": "string memory",
+                              "value": "_name"
+                            },
+                            "id": 391,
+                            "name": "Identifier",
+                            "src": "6623:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 348,
+                              "type": "uint32",
+                              "value": "_size"
+                            },
+                            "id": 392,
+                            "name": "Identifier",
+                            "src": "6642:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 350,
+                              "type": "string memory",
+                              "value": "_style"
+                            },
+                            "id": 393,
+                            "name": "Identifier",
+                            "src": "6662:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 352,
+                              "type": "string memory",
+                              "value": "_colorWay"
+                            },
+                            "id": 394,
+                            "name": "Identifier",
+                            "src": "6686:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 354,
+                              "type": "uint32",
+                              "value": "_retailPrice"
+                            },
+                            "id": 395,
+                            "name": "Identifier",
+                            "src": "6716:12:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 356,
+                              "type": "uint64",
+                              "value": "_manufactureTime"
+                            },
+                            "id": 396,
+                            "name": "Identifier",
+                            "src": "6753:16:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 358,
+                              "type": "uint64",
+                              "value": "_releaseTime"
+                            },
+                            "id": 397,
+                            "name": "Identifier",
+                            "src": "6790:12:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 360,
+                              "type": "string memory",
+                              "value": "_stockXTicker"
+                            },
+                            "id": 398,
+                            "name": "Identifier",
+                            "src": "6824:13:1"
+                          }
+                        ],
+                        "id": 399,
+                        "name": "FunctionCall",
+                        "src": "6580:264:1"
+                      }
+                    ],
+                    "id": 400,
+                    "name": "VariableDeclarationStatement",
+                    "src": "6554:290:1"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        402
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "newSneakerId",
+                          "scope": 430,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 401,
+                            "name": "ElementaryTypeName",
+                            "src": "6851:7:1"
+                          }
+                        ],
+                        "id": 402,
+                        "name": "VariableDeclaration",
+                        "src": "6851:20:1"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "-",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "uint256",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_struct$_Sneaker_$229_memory_ptr",
+                                      "typeString": "struct SneakerBase.Sneaker memory"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "push",
+                                  "referencedDeclaration": null,
+                                  "type": "function (struct SneakerBase.Sneaker storage ref) returns (uint256)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 282,
+                                      "type": "struct SneakerBase.Sneaker storage ref[] storage ref",
+                                      "value": "sneakers"
+                                    },
+                                    "id": 403,
+                                    "name": "Identifier",
+                                    "src": "6874:8:1"
+                                  }
+                                ],
+                                "id": 404,
+                                "name": "MemberAccess",
+                                "src": "6874:13:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 388,
+                                  "type": "struct SneakerBase.Sneaker memory",
+                                  "value": "_sneaker"
+                                },
+                                "id": 405,
+                                "name": "Identifier",
+                                "src": "6888:8:1"
+                              }
+                            ],
+                            "id": 406,
+                            "name": "FunctionCall",
+                            "src": "6874:23:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 407,
+                            "name": "Literal",
+                            "src": "6900:1:1"
+                          }
+                        ],
+                        "id": 408,
+                        "name": "BinaryOperation",
+                        "src": "6874:27:1"
+                      }
+                    ],
+                    "id": 409,
+                    "name": "VariableDeclarationStatement",
+                    "src": "6851:50:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                450,
+                                451
+                              ],
+                              "referencedDeclaration": 450,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 410,
+                            "name": "Identifier",
+                            "src": "7042:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 402,
+                                  "type": "uint256",
+                                  "value": "newSneakerId"
+                                },
+                                "id": 411,
+                                "name": "Identifier",
+                                "src": "7050:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "uint256",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint32",
+                                          "typeString": "uint32"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(uint256)",
+                                      "value": "uint256"
+                                    },
+                                    "id": 412,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "7066:7:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "uint32",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_uint256",
+                                              "typeString": "uint256"
+                                            }
+                                          ],
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "type": "type(uint32)",
+                                          "value": "uint32"
+                                        },
+                                        "id": 413,
+                                        "name": "ElementaryTypeNameExpression",
+                                        "src": "7074:6:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 402,
+                                          "type": "uint256",
+                                          "value": "newSneakerId"
+                                        },
+                                        "id": 414,
+                                        "name": "Identifier",
+                                        "src": "7081:12:1"
+                                      }
+                                    ],
+                                    "id": 415,
+                                    "name": "FunctionCall",
+                                    "src": "7074:20:1"
+                                  }
+                                ],
+                                "id": 416,
+                                "name": "FunctionCall",
+                                "src": "7066:29:1"
+                              }
+                            ],
+                            "id": 417,
+                            "name": "BinaryOperation",
+                            "src": "7050:45:1"
+                          }
+                        ],
+                        "id": 418,
+                        "name": "FunctionCall",
+                        "src": "7042:54:1"
+                      }
+                    ],
+                    "id": 419,
+                    "name": "ExpressionStatement",
+                    "src": "7042:54:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 342,
+                              "type": "function (address,address,uint256)",
+                              "value": "_transfer"
+                            },
+                            "id": 420,
+                            "name": "Identifier",
+                            "src": "7130:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "address payable",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "type": "type(address)",
+                                  "value": "address"
+                                },
+                                "id": 421,
+                                "name": "ElementaryTypeNameExpression",
+                                "src": "7140:7:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 422,
+                                "name": "Literal",
+                                "src": "7148:1:1"
+                              }
+                            ],
+                            "id": 423,
+                            "name": "FunctionCall",
+                            "src": "7140:10:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 362,
+                              "type": "address",
+                              "value": "_owner"
+                            },
+                            "id": 424,
+                            "name": "Identifier",
+                            "src": "7152:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 402,
+                              "type": "uint256",
+                              "value": "newSneakerId"
+                            },
+                            "id": 425,
+                            "name": "Identifier",
+                            "src": "7160:12:1"
+                          }
+                        ],
+                        "id": 426,
+                        "name": "FunctionCall",
+                        "src": "7130:43:1"
+                      }
+                    ],
+                    "id": 427,
+                    "name": "ExpressionStatement",
+                    "src": "7130:43:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 366
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 402,
+                          "type": "uint256",
+                          "value": "newSneakerId"
+                        },
+                        "id": 428,
+                        "name": "Identifier",
+                        "src": "7187:12:1"
+                      }
+                    ],
+                    "id": 429,
+                    "name": "Return",
+                    "src": "7180:19:1"
+                  }
+                ],
+                "id": 430,
                 "name": "Block",
-                "src": "6053:314:1"
+                "src": "6133:1071:1"
               }
             ],
-            "id": 366,
+            "id": 431,
             "name": "FunctionDefinition",
-            "src": "5763:604:1"
+            "src": "5823:1381:1"
           }
         ],
-        "id": 367,
+        "id": 432,
         "name": "ContractDefinition",
-        "src": "304:6065:1"
+        "src": "304:6902:1"
       }
     ],
-    "id": 368,
+    "id": 433,
     "name": "SourceUnit",
-    "src": "0:6370:1"
+    "src": "0:7207:1"
   },
   "compiler": {
     "name": "solc",
@@ -5524,7 +7662,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-28T07:44:24.532Z",
+  "updatedAt": "2021-03-28T07:52:23.731Z",
   "devdoc": {
     "author": "Heriberto Prieto",
     "details": "See the SneakerCore contract documentation to understand how the various contract facets are arranged.",

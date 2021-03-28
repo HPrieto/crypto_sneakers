@@ -66,10 +66,6 @@ contract SneakerBase is AccessControl {
     // Example: XC
     // string plant;
 
-    // Date when sneaker was manufactured.
-    // Example: 01/05/2020 converted to timestamp.
-    uint64 manufactureTime;
-
     // Style code assigned by manufacturer;
     // Example: 555088-033
     string style;
@@ -81,6 +77,10 @@ contract SneakerBase is AccessControl {
     // Price of sneaker set by manufacturer on release.
     // Example: 170
     uint32 retailPrice;
+
+    // Date when sneaker was manufactured.
+    // Example: 01/05/2020 converted to timestamp.
+    uint64 manufactureTime;
 
     // The date when sneaker was release on retail.
     // Example: 03/25/2021 converted to timestamp.
@@ -169,16 +169,18 @@ contract SneakerBase is AccessControl {
   /// @param _manufactureTime The time when the shoe was manufactured.
   /// @param _releaseTime The date when the sneaker was first released for retail.
   /// @param _stockXTicker The unique identifier assigned to the sneaker by StockX.
+  /// @param _owner The owner of the newly created sneaker.
   function _createSneaker(
     Brand _brand,
     string memory _name,
     uint32 _size,
     string memory _style,
     string memory _colorWay,
-    uint64 _retailPrice,
+    uint32 _retailPrice,
     uint64 _manufactureTime,
     uint64 _releaseTime,
-    string memory _stockXTicker
+    string memory _stockXTicker,
+    address _owner
   )
     internal
     returns (uint)
@@ -187,6 +189,30 @@ contract SneakerBase is AccessControl {
     // sure that these conditions are never broken. However! _createSneaker() is already
     // an expensive call (for storage), and it doesn't hurt to be especially careful
     // to ensure our data structures are always valid.
+    require(_size == uint256(uint32(_size)));
+    require(_retailPrice == uint256(uint64(_retailPrice)));
 
+    Sneaker memory _sneaker = Sneaker({
+      brand: _brand,
+      name: _name,
+      size: _size,
+      style: _style,
+      colorWay: _colorWay,
+      retailPrice: _retailPrice,
+      manufactureTime: _manufactureTime,
+      releaseTime: _releaseTime,
+      stockXTicker: _stockXTicker
+    });
+
+    uint256 newSneakerId = sneakers.push(_sneaker) - 1;
+
+    // It's probably never going to happen, 4 billion sneakers is A LOT, but
+    // let's just be 100% sure we never let this happen.
+    require(newSneakerId == uint256(uint32(newSneakerId)));
+
+    // Emit Transfer Event
+    _transfer(address(0), _owner, newSneakerId);
+
+    return newSneakerId;
   }
 }
