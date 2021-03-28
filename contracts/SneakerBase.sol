@@ -14,19 +14,49 @@ contract SneakerBase is AccessControl {
 
   /*** DATA TYPES ***/
 
+  // All the brands supported by CyptoSneakers.
+  enum Brand {
+    Adidas,
+    AirJordan,
+    AlexanderMcQueen,
+    ASICS,
+    Balenciaga,
+    Burberry,
+    Chanel,
+    CommonProjects,
+    Converse,
+    Crocs,
+    Diadora,
+    Dior,
+    Gucci,
+    LiNing,
+    LouisVuitton,
+    NewBalance,
+    Nike,
+    OffWhite,
+    Prada,
+    Puma,
+    Reebok,
+    SaintLaurent,
+    Saucony,
+    UnderArmor,
+    Vans,
+    Versace
+  }
+
   /// @dev The main Sneaker struct. Every Sneaker in CryptoSneakers is represented by a copy
   ///  of this structure, so great care was taken to ensure that it fits neatly into
   ///  exactly two 256-bit words. Note that the order of the members in this structure
   ///  is important because of the byte-packing rules used by Ethereum.
   /// @note Example sneaker can be found in: https://stockx.com/air-jordan-1-retro-high-patina
   struct Sneaker {
+    // Brand of the sneaker.
+    // Example: Nike
+    Brand brand;
+
     // Name of the sneaker.
     // Example: 'Jordan 1 Retro High Patina'
     string name;
-
-    // Brand of the sneaker.
-    // Example: Nike
-    string brand;
 
     // Size of specific sneaker.
     // Example: 10.5
@@ -34,11 +64,11 @@ contract SneakerBase is AccessControl {
 
     // Plant where sneaker was manufactured.
     // Example: XC
-    string plant;
+    // string plant;
 
     // Date when sneaker was manufactured.
     // Example: 01/05/2020 converted to timestamp.
-    uint64 manufactureDate;
+    uint64 manufactureTime;
 
     // Style code assigned by manufacturer;
     // Example: 555088-033
@@ -54,7 +84,7 @@ contract SneakerBase is AccessControl {
 
     // The date when sneaker was release on retail.
     // Example: 03/25/2021 converted to timestamp.
-    uint64 releaseDate;
+    uint64 releaseTime;
 
     // Unique code assigned to each sneaker by StockX.
     // Example: JB-JO1RHRSBG
@@ -125,5 +155,38 @@ contract SneakerBase is AccessControl {
     }
     // Emit the transfer event.
     emit Transfer(_from, _to, _tokenId);
+  }
+
+  /// @dev An internal method that creates a new sneaker and stores it. This
+  ///  method doesn't do any checking and should only be called when the
+  ///  input data is known to be valid. Will generate a Transfer event.
+  /// @param _brand The brand name of the sneaker.
+  /// @param _name The name of the sneaker assigned by the brand.
+  /// @param _size The size of the sneaker.
+  /// @param _style The style number of the sneaker.
+  /// @param _colorWay The colorway of the sneaker
+  /// @param _retailPrice The price of the sneaker when released for retail purchasing.
+  /// @param _manufactureTime The time when the shoe was manufactured.
+  /// @param _releaseTime The date when the sneaker was first released for retail.
+  /// @param _stockXTicker The unique identifier assigned to the sneaker by StockX.
+  function _createSneaker(
+    Brand _brand,
+    string memory _name,
+    uint32 _size,
+    string memory _style,
+    string memory _colorWay,
+    uint64 _retailPrice,
+    uint64 _manufactureTime,
+    uint64 _releaseTime,
+    string memory _stockXTicker
+  )
+    internal
+    returns (uint)
+  {
+    // These requires are not strictly necessary, our calling code should make
+    // sure that these conditions are never broken. However! _createSneaker() is already
+    // an expensive call (for storage), and it doesn't hurt to be especially careful
+    // to ensure our data structures are always valid.
+
   }
 }
