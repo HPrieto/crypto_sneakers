@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
-import "AccessControl.sol";
+import "./AccessControl.sol";
 
 /// @title Base contract for CryptoSneakers. Holds all common structs, events and base variables.
 /// @author Heriberto Prieto
@@ -18,36 +18,46 @@ contract SneakerBase is AccessControl {
   ///  of this structure, so great care was taken to ensure that it fits neatly into
   ///  exactly two 256-bit words. Note that the order of the members in this structure
   ///  is important because of the byte-packing rules used by Ethereum.
+  /// @note Example sneaker can be found in: https://stockx.com/air-jordan-1-retro-high-patina
   struct Sneaker {
     // Name of the sneaker.
     // Example: 'Jordan 1 Retro High Patina'
     string name;
 
     // Brand of the sneaker.
+    // Example: Nike
     string brand;
 
-    string upc;
-
     // Size of specific sneaker.
+    // Example: 10.5
     uint64 size;
 
-    // Plant where sneaker was manufactured. (XC)
+    // Plant where sneaker was manufactured.
+    // Example: XC
     string plant;
 
+    // Date when sneaker was manufactured.
+    // Example: 01/05/2020 converted to timestamp.
     uint64 manufactureDate;
 
     // Style code assigned by manufacturer;
+    // Example: 555088-033
     string style;
 
+    // Colorway of the sneaker.
+    // Example: BLACK/GREY-RUST
     string colorWay;
 
     // Price of sneaker set by manufacturer on release.
+    // Example: 170
     uint32 retailPrice;
 
     // The date when sneaker was release on retail.
+    // Example: 03/25/2021 converted to timestamp.
     uint64 releaseDate;
 
     // Unique code assigned to each sneaker by StockX.
+    // Example: JB-JO1RHRSBG
     string stockXTicker;
   }
 
@@ -92,6 +102,10 @@ contract SneakerBase is AccessControl {
   ///  at any time. A zero value means no approval is outstanding.
   mapping (uint256 => address) public sneakerIndexToApproved;
 
+  /// @dev A mapping from Sneaker StockX ticker to SneakerID. Each StockX ticker can only
+  ///  be assigned to a specific sneaker.
+  mapping (string => uint256) public stockXTickerToSneaker;
+
   /// @dev The address of the ClockAuction contract that handles sales of Sneakers. This
   ///  same contract handles both peer-to-peer sales.
   // SaleClockAuction public saleAuction;
@@ -110,6 +124,6 @@ contract SneakerBase is AccessControl {
       delete sneakerIndexToApproved[_tokenId];
     }
     // Emit the transfer event.
-    Transfer(_from, _to, _tokenId);
+    emit Transfer(_from, _to, _tokenId);
   }
 }
