@@ -170,6 +170,7 @@ contract SneakerBase is AccessControl {
   /// @param _releaseTime The date when the sneaker was first released for retail.
   /// @param _stockXTicker The unique identifier assigned to the sneaker by StockX.
   /// @param _owner The owner of the newly created sneaker.
+  /// @return The ID of the newly created sneaker.
   function _createSneaker(
     Brand _brand,
     string memory _name,
