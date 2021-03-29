@@ -4,7 +4,7 @@ import "./SneakerBase.sol";
 import "./ERC721.sol";
 import "./ERC721Metadata.sol";
 
-/// @title The fact of CryptoSneakers core contract that manages ownership, ERC-721 (draft compliant).
+/// @title The facet of CryptoSneakers core contract that manages ownership, ERC-721 (draft compliant).
 /// @author Heriberto Prieto
 contract SneakerOwnership is SneakerBase, ERC721 {
 
