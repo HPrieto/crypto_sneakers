@@ -1,0 +1,123 @@
+{
+  "contractName": "ERC721Metadata",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"The external contract that is responsible for generating metadata for the Sneaker.  it has one function that will return the data as bytes.\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/ERC721Metadata.sol\":\"ERC721Metadata\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hprieto/Dev/crypto_sneakers/contracts/ERC721Metadata.sol\":{\"keccak256\":\"0x289cf1cb44b4d8c53a799125467aae6704c86973b7ce5f6d792cd6a6d64f5131\",\"urls\":[\"bzz-raw://3c2a443977cf76441cab5444c8b092a2a25ff792a33682292a8dfb328c8f9689\",\"dweb:/ipfs/QmWwcuMCkJLBx3tTRgEYkEZU5ukSzVc4FWBQEPUcXaJnK5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158203c79464d620939204d80c7e4393be5e7bbfdaf4d744892a024c1f0f438bee83d64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158203c79464d620939204d80c7e4393be5e7bbfdaf4d744892a024c1f0f438bee83d64736f6c63430005100032",
+  "sourceMap": "188:751:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;188:751:0;;;;;;;",
+  "deployedSourceMap": "188:751:0:-;;;;;",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\n/// @title The external contract that is responsible for generating metadata for the Sneaker.\n///  it has one function that will return the data as bytes.\ncontract ERC721Metadata {\n  /// @dev Given a token Id, returns a byte array that is supposed to be converted into string.\n  /* function getMetadata(uint256 _tokenId, string) public view returns (bytes32[4] buffer, uint256 count) {\n    if (_tokenId == 1) {\n      buffer[0] = \"Hello World of SneakerHeads! :D\";\n      count = 30;\n    } else if (_tokenId == 2) {\n      buffer[0] = \"I would definitely choose a medi\";\n      buffer[1] = \"um length string.\";\n      count = 49;\n    } else if (_tokenId == 3) {\n      buffer[0] = \"Lorem ipsum dolor sit amet, mi e\";\n      buffer[1] = \"st accumsan dapibus augue lorem,\";\n      buffer[2] = \" tristique vestibulum id, libero\";\n      buffer[3] = \" suscipit varius sapien aliquam.\";\n      count = 128;\n    }\n  } */\n}\n",
+  "sourcePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/ERC721Metadata.sol",
+  "ast": {
+    "absolutePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/ERC721Metadata.sol",
+    "exportedSymbols": {
+      "ERC721Metadata": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title The external contract that is responsible for generating metadata for the Sneaker.\n  it has one function that will return the data as bytes.",
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "ERC721Metadata",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "188:751:0"
+      }
+    ],
+    "src": "0:940:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/hprieto/Dev/crypto_sneakers/contracts/ERC721Metadata.sol",
+      "exportedSymbols": {
+        "ERC721Metadata": [
+          2
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title The external contract that is responsible for generating metadata for the Sneaker.\n  it has one function that will return the data as bytes.",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2
+          ],
+          "name": "ERC721Metadata",
+          "nodes": [
+            null
+          ],
+          "scope": 3
+        },
+        "id": 2,
+        "name": "ContractDefinition",
+        "src": "188:751:0"
+      }
+    ],
+    "id": 3,
+    "name": "SourceUnit",
+    "src": "0:940:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-29T10:12:15.162Z",
+  "devdoc": {
+    "methods": {},
+    "title": "The external contract that is responsible for generating metadata for the Sneaker.  it has one function that will return the data as bytes."
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
