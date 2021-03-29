@@ -216,4 +216,10 @@ contract SneakerBase is AccessControl {
 
     return newSneakerId;
   }
+
+  // Any C-level can fix how many seconds per blocks are currently observed.
+  function setSecondsPerBlock(uint256 secs) external onlyCLevel {
+    require(secs < cooldowns[0]);
+    secondsPerBlock = secs;
+  }
 }
